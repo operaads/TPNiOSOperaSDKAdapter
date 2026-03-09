@@ -1,0 +1,59 @@
+{
+    "1": {
+      "name": "facebook",
+      "advice": [
+        "1.VPN到美国",
+        "2.测试设备上需安装Facebook应用",
+        "3.Meta广告源的应用编号（App ID）与版位编号（Placement ID）的前缀一致"
+      ]
+    },
+    "2": {
+      "name": "admob",
+      "advice": [
+        "VPN到海外",
+      ]
+    },
+    "50": {
+      "name": "pangle",
+      "advice": [
+        "VPN到韩国，日本"
+      ]
+    },
+    "3": {
+      "name": "inmobi",
+      "advice": [
+        "VPN到印度"
+      ]
+    },
+    "32": {
+      "name": "mytarget",
+      "advice": [
+        "VPN到俄罗斯"
+      ]
+    },
+    "13": {
+      "name": "vungle",
+      "advice": [
+        "1.检查测试设备上是否有调整过时间",
+        "2.如果打开竞价调试模式也无法竞价成功，可到Vungle后台添加测试设备"
+      ]
+    },
+    "9": {
+      "name": "chartboost",
+      "advice": [
+        "VPN到韩国，日本"
+      ]
+    },
+    "58": {
+      "name": "Verve",
+      "advice": [
+        "VPN到美国"
+      ]
+    },
+    "5": {
+      "name": "APPlovin",
+      "advice": [
+        "VPN到美国"
+      ]
+    },
+}

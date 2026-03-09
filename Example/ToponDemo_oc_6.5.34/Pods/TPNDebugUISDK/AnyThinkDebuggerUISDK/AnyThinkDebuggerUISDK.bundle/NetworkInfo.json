@@ -1,0 +1,35 @@
+[
+    {
+        "section_title" : "广告平台信息",
+        "row_info" : [
+            {
+                "row_title" : "广告平台",
+                "row_type" : "advertising_platform",
+            },
+            {
+                "row_title" : "广告平台ID",
+                "row_type" : "advertising_platform_id",
+            },
+            {
+                "row_title" : "Adapter版本",
+                "row_type" : "adapter_version",
+            },
+            {
+                "row_title" : "Network SDK 版本",
+                "row_type" : "network_version",
+            },
+            {
+                "row_title" : "测试操作",
+                "row_type" : "test_suggestion",
+            }]
+    },
+    {
+        
+        "section_title" : "测试操作",
+        "row_info" : [
+            {
+                "row_title" : "使用调试模式测试",
+                "row_type" : "test_handle",
+            }]
+    }
+]

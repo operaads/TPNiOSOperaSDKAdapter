@@ -1,0 +1,50 @@
+[
+    {
+        "section_title" : "应用信息",
+        "section_type" : "app_info",
+        "row_info" : [
+            {
+                "row_title" : "Bundle ID",
+                "row_type" : "bundle_id",
+            },
+            {
+                "row_title" : "SDK版本",
+                "row_type" : "topon_version",
+            }]
+    },
+    {
+        "section_title" : "广告位配置",
+        "section_type" : "placement_info",
+        "row_info" : []
+    },
+    {
+        "section_title" : "原生广告",
+        "section_type" : "0",
+        "row_info" : []
+    },
+    {
+        "section_title" : "激励视频广告",
+        "section_type" : "1",
+        "row_info" : []
+    },
+    {
+        "section_title" : "横幅广告",
+        "section_type" : "2",
+        "row_info" : []
+    },
+    {
+        "section_title" : "插屏广告",
+        "section_type" : "3",
+        "row_info" : []
+    },
+    {
+        "section_title" : "开屏广告",
+        "section_type" : "4",
+        "row_info" : []
+    },
+    {
+        "section_title" : "视频流广告",
+        "section_type" : "5",
+        "row_info" : []
+    },
+]

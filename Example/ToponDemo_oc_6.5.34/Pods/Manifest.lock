@@ -1,0 +1,60 @@
+PODS:
+  - AppLovinSDK (13.6.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.9)
+  - OpAdxSdk (2.8.1)
+  - SDWebImage (5.21.7):
+    - SDWebImage/Core (= 5.21.7)
+  - SDWebImage/Core (5.21.7)
+  - SmartdigimktSDK (6.5.42)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - TPNDebugUISDK (1.0.7):
+    - TPNiOS (>= 6.4.40)
+  - TPNiOS (6.5.34):
+    - TPNiOS/TPNSDK (= 6.5.34)
+  - TPNiOS/TPNSDK (6.5.34)
+  - TPNMediationAdxSmartdigimktAdapter (6.5.42.1):
+    - SmartdigimktSDK (= 6.5.42)
+    - TPNiOS (>= 6.5.30)
+
+DEPENDENCIES:
+  - AppLovinSDK
+  - Masonry
+  - MJRefresh
+  - OpAdxSdk (~> 2.8.1)
+  - SDWebImage
+  - SVProgressHUD
+  - TPNDebugUISDK
+  - TPNiOS (= 6.5.34)
+  - TPNMediationAdxSmartdigimktAdapter (= 6.5.42.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AppLovinSDK
+    - Masonry
+    - MJRefresh
+    - OpAdxSdk
+    - SDWebImage
+    - SmartdigimktSDK
+    - SVProgressHUD
+    - TPNDebugUISDK
+    - TPNiOS
+    - TPNMediationAdxSmartdigimktAdapter
+
+SPEC CHECKSUMS:
+  AppLovinSDK: c516661fbeb9d7ba1ec8c10c8da60581178a6204
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  OpAdxSdk: 63b59f6f4c8f3070675cc1fb658effe9d15c7c8a
+  SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
+  SmartdigimktSDK: d05e5eb7f2d091c0626c2b70bf26d8f50a29c9ca
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  TPNDebugUISDK: f7c5f65ae127c9ef2b8bd417a9ea4322815af053
+  TPNiOS: 1c73817ea2283007e7b66b6a0882c43d0674b8c0
+  TPNMediationAdxSmartdigimktAdapter: 961170cda32ebc388285463456a5ce55d5476514
+
+PODFILE CHECKSUM: 1e41c4b47987c22e801e6576c3cb630d166e7b3e
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,50 @@
+[
+    {
+        "section_title" : "App Info",
+        "section_type" : "app_info",
+        "row_info" : [
+            {
+                "row_title" : "Bundle ID",
+                "row_type" : "bundle_id",
+            },
+            {
+                "row_title" : "SDK Version",
+                "row_type" : "topon_version",
+            }]
+    },
+    {
+        "section_title" : "Placement Settings",
+        "section_type" : "placement_info",
+        "row_info" : []
+    },
+    {
+        "section_title" : "Native",
+        "section_type" : "0",
+        "row_info" : []
+    },
+    {
+        "section_title" : "RewardedVideo",
+        "section_type" : "1",
+        "row_info" : []
+    },
+    {
+        "section_title" : "Banner",
+        "section_type" : "2",
+        "row_info" : []
+    },
+    {
+        "section_title" : "Interstitial",
+        "section_type" : "3",
+        "row_info" : []
+    },
+    {
+        "section_title" : "Splash",
+        "section_type" : "4",
+        "row_info" : []
+    },
+    {
+        "section_title" : "MediaVideo ",
+        "section_type" : "5",
+        "row_info" : []
+    },
+]

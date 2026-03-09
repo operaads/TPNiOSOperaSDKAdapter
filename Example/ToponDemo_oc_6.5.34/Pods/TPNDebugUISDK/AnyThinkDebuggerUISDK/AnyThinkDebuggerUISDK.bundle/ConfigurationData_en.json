@@ -1,0 +1,26 @@
+[
+    {
+        "section_title" : "Privacy Settings",
+        "row_info" : [
+            {
+                "row_title" : "Personalized advertising",
+                "row_type" : "advertising_settings",
+            },
+            {
+                "row_title" : "GDPR",
+                "row_type" : "GDPR",
+            },
+            {
+                "row_title" : "Limit reported data",
+                "row_type" : "data_report",
+            }]
+    },
+    {
+        "section_title" : "iOS ATT Setting",
+        "row_info" : [
+            {
+                "row_title" : "ATT",
+                "row_type" : "att",
+            }]
+    }
+]

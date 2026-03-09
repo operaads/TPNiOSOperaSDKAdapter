@@ -1,0 +1,54 @@
+[
+    {
+        "section_title" : "Ad Source Info",
+        "row_info" : [
+            {
+                "row_title" : "Ad Network",
+                "row_type" : "advertising_platform",
+            },
+            {
+                "row_title" : "Network Firm ID",
+                "row_type" : "advertising_platform_id",
+            },
+            {
+                "row_title" : "Adapter Version",
+                "row_type" : "adapter_version",
+            },
+            {
+                "row_title" : "Network SDK Version",
+                "row_type" : "network_version",
+            },
+            {
+                "row_title" : "Suggestion",
+                "row_type" : "test_suggestion",
+            }]
+    },
+    {
+        
+        "section_title" : "Test Operation",
+        "row_info" : [
+            {
+                "row_title" : "",
+                "row_type" : "test_handle",
+            }]
+    },
+    {
+        
+        "section_title" : "Test Log",
+        "row_info" : [
+            {
+                "row_title" : "",
+                "row_type" : "test_log",
+            }]
+    },
+    {
+        
+        "section_title" : "Suggestion",
+        "row_info" : [
+            {
+                "row_title" : "",
+                "row_type" : "solution_suggestion",
+            }]
+    }
+    
+]

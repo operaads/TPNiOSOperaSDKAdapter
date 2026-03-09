@@ -1,0 +1,14 @@
+[
+    {
+        "section_title" : "Exceptional Integrations",
+        "section_type" : "integration_failure",
+    },
+    {
+        "section_title" : "Completed Integrations",
+        "section_type" : "integration_successful",
+    },
+    {
+        "section_title" : "Miss Integrations",
+        "section_type" : "integration_out",
+    }
+]

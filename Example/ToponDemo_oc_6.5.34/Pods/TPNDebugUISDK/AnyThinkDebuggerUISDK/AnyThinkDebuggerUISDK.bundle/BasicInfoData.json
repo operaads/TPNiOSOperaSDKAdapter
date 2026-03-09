@@ -1,0 +1,75 @@
+[
+    {
+        "section_title" : "应用信息",
+        "row_info" : [
+            {
+                "row_title" : "Bundle ID",
+                "row_type" : "bundle_id",
+            },
+            {
+                "row_title" : "应用版本名",
+                "row_type" : "app_name",
+            },
+            {
+                "row_title" : "应用版本号",
+                "row_type" : "app_version",
+            },
+            {
+                "row_title" : "SDK版本",
+                "row_type" : "topon_version",
+            },
+            {
+                "row_title" : "Debug UI插件版本",
+                "row_type" : "bebug_version",
+            },
+            {
+                "row_title" : "TopOn App ID",
+                "row_type" : "topon_app_id",
+            }]
+    },
+    {
+        "section_title" : "设备ID",
+        "row_info" : [
+            {
+                "row_title" : "IDFA",
+                "row_type" : "idfa",
+            },
+            {
+                "row_title" : "IDFV",
+                "row_type" : "idfv",
+            }]
+    },
+    {
+        
+        "section_title" : "设备信息",
+        "row_info" : [
+            {
+                "row_title" : "品牌",
+                "row_type" : "brand",
+            },
+            {
+                "row_title" : "型号",
+                "row_type" : "model",
+            }]
+    },
+    {
+        "section_title" : "系统信息",
+        "row_info" : [
+            {
+                "row_title" : "系统版本号",
+                "row_type" : "system_version",
+            }]
+    },
+    {
+        "section_title" : "网络信息",
+        "row_info" : [
+            {
+                "row_title" : "网络类型",
+                "row_type" : "network_type",
+            },
+            {
+                "row_title" : "IP地址",
+                "row_type" : "ip",
+            }]
+    }
+]

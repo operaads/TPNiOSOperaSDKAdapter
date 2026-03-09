@@ -1,0 +1,34 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '13.0'
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+         end
+    end
+  end
+end
+
+target 'iOSDemo' do
+  use_frameworks!
+  
+    pod 'TPNiOS','6.5.34'
+    #TPN Adx SDK(necessary)
+    pod 'TPNMediationAdxSmartdigimktAdapter','6.5.42.1'
+    pod 'TPNDebugUISDK'
+    
+    pod 'AppLovinSDK'
+    pod 'TPNiOSOperaSDKAdapter', '~>2.8.1.0'
+    pod 'OpAdxSdk', '~>2.8.1'
+    
+ 
+    # Demo UI依赖的第三库
+    pod 'Masonry'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
+   
+end

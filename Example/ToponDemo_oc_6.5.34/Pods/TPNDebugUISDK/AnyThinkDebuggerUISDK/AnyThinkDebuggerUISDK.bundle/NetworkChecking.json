@@ -1,0 +1,14 @@
+[
+    {
+        "section_title" : "集成异常的广告平台",
+        "section_type" : "integration_failure",
+    },
+    {
+        "section_title" : "完成集成的广告平台",
+        "section_type" : "integration_successful",
+    },
+    {
+        "section_title" : "未完成集成的广告平台",
+        "section_type" : "integration_out",
+    }
+]

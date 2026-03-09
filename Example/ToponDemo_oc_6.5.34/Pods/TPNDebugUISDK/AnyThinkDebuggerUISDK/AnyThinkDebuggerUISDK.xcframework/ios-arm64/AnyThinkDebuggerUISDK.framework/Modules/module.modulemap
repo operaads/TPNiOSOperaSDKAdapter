@@ -1,0 +1,6 @@
+framework module AnyThinkDebuggerUISDK {
+  umbrella header "AnyThinkDebuggerUISDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,75 @@
+[
+    {
+        "section_title" : "App Info",
+        "row_info" : [
+            {
+                "row_title" : "Bundle ID",
+                "row_type" : "bundle_id",
+            },
+            {
+                "row_title" : "App Version Name",
+                "row_type" : "app_name",
+            },
+            {
+                "row_title" : "App Version Code",
+                "row_type" : "app_version",
+            },
+            {
+                "row_title" : "SDK Version",
+                "row_type" : "topon_version",
+            },
+            {
+                "row_title" : "Debugger Version",
+                "row_type" : "bebug_version",
+            },
+            {
+                "row_title" : "TopOn App ID",
+                "row_type" : "topon_app_id",
+            }]
+    },
+    {
+        "section_title" : "Device ID",
+        "row_info" : [
+            {
+                "row_title" : "IDFA",
+                "row_type" : "idfa",
+            },
+            {
+                "row_title" : "IDFV",
+                "row_type" : "idfv",
+            }]
+    },
+    {
+        
+        "section_title" : "Device Info",
+        "row_info" : [
+            {
+                "row_title" : "Brand",
+                "row_type" : "brand",
+            },
+            {
+                "row_title" : "Model",
+                "row_type" : "model",
+            }]
+    },
+    {
+        "section_title" : "System Info",
+        "row_info" : [
+            {
+                "row_title" : "System Version Code",
+                "row_type" : "system_version",
+            }]
+    },
+    {
+        "section_title" : "Network Info",
+        "row_info" : [
+            {
+                "row_title" : "Network Type",
+                "row_type" : "network_type",
+            },
+            {
+                "row_title" : "IP Address",
+                "row_type" : "ip",
+            }]
+    }
+]

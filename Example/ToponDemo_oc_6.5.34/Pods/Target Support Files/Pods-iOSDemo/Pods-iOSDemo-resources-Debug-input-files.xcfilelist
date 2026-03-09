@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-resources.sh
+${PODS_ROOT}/SmartdigimktSDK/SmartDigimktSDK/SmartdigimktSDK.bundle
+${PODS_ROOT}/TPNDebugUISDK/AnyThinkDebuggerUISDK/AnyThinkDebuggerUISDK.bundle
+${PODS_ROOT}/TPNiOS/core/AnyThinkSDK.bundle
