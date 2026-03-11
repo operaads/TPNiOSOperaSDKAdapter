@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
 
   spec.static_framework = true
   
-  spec.vendored_frameworks = "TPNiOSOperaSDKAdapter.xcframework"
+  spec.vendored_frameworks = "OpAdxAdapterTopon.xcframework"
 
   # spec.source_files  = "OpAdxAdapterTopon/CustomAdapter_6.5.xx/**/*.{h,m}"
 
