@@ -4,7 +4,7 @@ Custom adapter for integrating Opera Ads SDK with TopOn/AnyThink mediation platf
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/TPNiOSOperaSDKAdapter.svg)](https://cocoapods.org/pods/TPNiOSOperaSDKAdapter)
 [![Platform](https://img.shields.io/cocoapods/p/TPNiOSOperaSDKAdapter.svg?style=flat)](https://cocoapods.org/pods/TPNiOSOperaSDKAdapter)
-[![License](https://img.shields.io/cocoapods/l/TPNiOSOperaSDKAdapter.svg?style=flat)](https://github.com/luanchen/TPNiOSOperaSDKAdapter/blob/main/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/TPNiOSOperaSDKAdapter.svg?style=flat)](https://github.com/operaads/TPNiOSOperaSDKAdapter/blob/main/LICENSE)
 
 English | [简体中文](README.MD)
 
@@ -24,7 +24,7 @@ TPNiOSOperaSDKAdapter is a custom mediation adapter that enables seamless integr
 
 - iOS 13.0+
 - TopOn SDK 6.5.34+
-- OpAdxSdk 2.8.0+
+- OpAdxSdk 2.8.3
 - Xcode 13.0+
 
 ## Installation
@@ -38,10 +38,10 @@ Add the following to your `Podfile`:
 pod 'TPNiOS', '~> 6.5.34'
 
 # Opera Ads SDK
-pod 'OpAdxSdk', '~> 2.8.0'
+pod 'OpAdxSdk', '2.8.3'
 
 # Opera Ads TopOn Adapter
-pod 'TPNiOSOperaSDKAdapter', '~> 2.8.1'
+pod 'TPNiOSOperaSDKAdapter', '2.8.3.0'
 ```
 
 Then run:
@@ -231,49 +231,10 @@ Use TopOn's standard APIs to load and show ads:
 @end
 ```
 
-## Adapter Architecture
+## Version History
 
-### Core Components
-
-```
-OpAdxAdapterTopon/
-└── CustomAdapter_6.5.xx/
-    ├── AdapterVersion.h              # Adapter version
-    ├── Base/
-    │   ├── OpAdxToponBaseAdapter     # Base adapter class
-    │   └── OpAdxToponInitAdapter     # SDK initialization adapter
-    ├── Banner/
-    │   ├── OpAdxToponBannerAdapter   # Banner adapter
-    │   └── OpAdxToponBannerDelegate  # Banner callback bridge
-    ├── Interstitial/
-    │   ├── OpAdxToponInterstitialAdapter
-    │   └── OpAdxToponInterstitialDelegate
-    ├── RewardVideo/
-    │   ├── OpAdxToponRewardVideoAdapter
-    │   └── OpAdxToponRewardVideoDelegate
-    ├── Native/
-    │   ├── OpAdxToponNativeAdapter
-    │   ├── OpAdxToponNativeDelegate
-    │   ├── OpAdxToponNativeObject
-    │   └── OpAdxToponNativeAdView
-    └── Splash/
-        ├── OpAdxToponSplashAdapter
-        └── OpAdxToponSplashDelegate
-```
-
-### Callback Mapping
-
-| Opera Ads SDK Callback | TopOn Callback |
-|------------------------|---------------|
-| `onAdLoaded` | `atOnAdLoadedExtra:` |
-| `onAdFailedToLoad` | `atOnAdLoadFailed:adExtra:` |
-| `onAdDisplayed` | `atOnAdShow:` |
-| `onAdClicked` | `atOnAdClick:` |
-| `onAdClosed` | `atOnAdClosed:` |
-| `onAdFailedToShow` | `atOnAdShowFailed:extra:` |
-| `didRewardUserWithItem:` | `atOnRewardedVideoAdRewarded` |
-
-## Release Notes
+### 2.8.3.0 (2026-03-11)
+- Built with Xcode 16.2 for improved compatibility
 
 ### 2.8.1.0 (2026-03-09)
 - ✅ Support for TopOn SDK 6.5.34+
@@ -311,17 +272,6 @@ Native ads require proper interaction view registration:
 ### 4. Error Handling
 All errors are returned through TopOn's error callbacks with detailed error codes and messages.
 
-## Debugging
-
-### Enable Logging
-
-```objective-c
-// TopOn logging
-[[ATAPI sharedInstance] setLogEnabled:YES];
-
-// Opera Ads SDK logging (set before SDK initialization)
-// See OpAdxSdk documentation for details
-```
 
 ### Common Issues
 
@@ -346,7 +296,7 @@ For complete sample projects, see:
 
 - 📧 Email: chenl@opera.com
 - 📖 Documentation: [Opera Ads iOS SDK Documentation]
-- 🐛 Issue Tracker: [GitHub Issues](https://github.com/luanchen/TPNiOSOperaSDKAdapter/issues)
+- 🐛 Issue Tracker: [GitHub Issues](https://github.com/operaads/TPNiOSOperaSDKAdapter/issues)
 
 ## License
 

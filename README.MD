@@ -4,7 +4,7 @@ Opera Ads SDK 的 TopOn/AnyThink 聚合平台自定义适配器。
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/TPNiOSOperaSDKAdapter.svg)](https://cocoapods.org/pods/TPNiOSOperaSDKAdapter)
 [![Platform](https://img.shields.io/cocoapods/p/TPNiOSOperaSDKAdapter.svg?style=flat)](https://cocoapods.org/pods/TPNiOSOperaSDKAdapter)
-[![License](https://img.shields.io/cocoapods/l/TPNiOSOperaSDKAdapter.svg?style=flat)](https://github.com/luanchen/TPNiOSOperaSDKAdapter/blob/main/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/TPNiOSOperaSDKAdapter.svg?style=flat)](https://github.com/operaads/TPNiOSOperaSDKAdapter/blob/main/LICENSE)
 
 [English](README_EN.MD) | 简体中文
 
@@ -24,7 +24,7 @@ TPNiOSOperaSDKAdapter 是一个自定义聚合适配器，使 Opera Advertising 
 
 - iOS 13.0+
 - TopOn SDK 6.5.34+
-- OpAdxSdk 2.8.0+
+- OpAdxSdk 2.8.3
 - Xcode 13.0+
 
 ## 安装
@@ -38,10 +38,10 @@ TPNiOSOperaSDKAdapter 是一个自定义聚合适配器，使 Opera Advertising 
 pod 'TPNiOS', '~> 6.5.34'
 
 # Opera Ads SDK
-pod 'OpAdxSdk', '~> 2.8.1'
+pod 'OpAdxSdk', '2.8.3'
 
 # Opera Ads TopOn 适配器
-pod 'TPNiOSOperaSDKAdapter', '~> 2.8.1.0'
+pod 'TPNiOSOperaSDKAdapter', '2.8.3.0'
 ```
 
 然后运行：
@@ -231,49 +231,10 @@ pod install
 @end
 ```
 
-## 适配器架构
-
-### 核心组件
-
-```
-OpAdxAdapterTopon/
-└── CustomAdapter_6.5.xx/
-    ├── AdapterVersion.h              # 适配器版本号
-    ├── Base/
-    │   ├── OpAdxToponBaseAdapter     # 基础适配器类
-    │   └── OpAdxToponInitAdapter     # SDK初始化适配器
-    ├── Banner/
-    │   ├── OpAdxToponBannerAdapter   # Banner适配器
-    │   └── OpAdxToponBannerDelegate  # Banner回调桥接
-    ├── Interstitial/
-    │   ├── OpAdxToponInterstitialAdapter
-    │   └── OpAdxToponInterstitialDelegate
-    ├── RewardVideo/
-    │   ├── OpAdxToponRewardVideoAdapter
-    │   └── OpAdxToponRewardVideoDelegate
-    ├── Native/
-    │   ├── OpAdxToponNativeAdapter
-    │   ├── OpAdxToponNativeDelegate
-    │   ├── OpAdxToponNativeObject
-    │   └── OpAdxToponNativeAdView
-    └── Splash/
-        ├── OpAdxToponSplashAdapter
-        └── OpAdxToponSplashDelegate
-```
-
-### 回调映射
-
-| Opera Ads SDK 回调 | TopOn 回调 |
-|-------------------|-----------|
-| `onAdLoaded` | `atOnAdLoadedExtra:` |
-| `onAdFailedToLoad` | `atOnAdLoadFailed:adExtra:` |
-| `onAdDisplayed` | `atOnAdShow:` |
-| `onAdClicked` | `atOnAdClick:` |
-| `onAdClosed` | `atOnAdClosed:` |
-| `onAdFailedToShow` | `atOnAdShowFailed:extra:` |
-| `didRewardUserWithItem:` | `atOnRewardedVideoAdRewarded` |
-
 ## 版本历史
+
+### 2.8.3.0 (2026-03-11)
+- 使用xcode(16.2)编译,提高兼容性
 
 ### 2.8.1.0 (2026-03-09)
 - ✅ 支持 TopOn SDK 6.5.34+
@@ -311,17 +272,6 @@ OpAdxAdapterTopon/
 ### 4. 错误处理
 所有错误都会通过 TopOn 的错误回调返回，包含详细的错误码和错误信息。
 
-## 调试
-
-### 启用日志
-
-```objective-c
-// TopOn 日志
-[[ATAPI sharedInstance] setLogEnabled:YES];
-
-// Opera Ads SDK 日志（在 SDK 初始化前设置）
-// 详见 OpAdxSdk 文档
-```
 
 ### 常见问题
 
@@ -346,7 +296,7 @@ A: 检查是否正确调用了 `registerViewForInteraction` 方法。
 
 - 📧 Email: chenl@opera.com
 - 📖 文档: [Opera Ads iOS SDK 文档]
-- 🐛 问题反馈: [GitHub Issues](https://github.com/luanchen/TPNiOSOperaSDKAdapter/issues)
+- 🐛 问题反馈: [GitHub Issues](https://github.com/operaads/TPNiOSOperaSDKAdapter/issues)
 
 ## 许可证
 
