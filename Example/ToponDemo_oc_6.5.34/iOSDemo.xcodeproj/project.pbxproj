@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48AA0EBA2F1E1EC70005AD9A /* ATSafeThreadArray_OP.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AA0EB92F1E1EC70005AD9A /* ATSafeThreadArray_OP.m */; };
 		89255F812D2ADF5E00995FDE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89255F7F2D2ADF5E00995FDE /* HomeViewController.m */; };
 		89255FB82D2AE22700995FDE /* NaviBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89255FB72D2AE22700995FDE /* NaviBarView.m */; };
 		89255FBC2D2AE4A500995FDE /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89255FBB2D2AE4A500995FDE /* LocalizationManager.m */; };
@@ -55,9 +54,20 @@
 		CAF8F49F2D3FA7D900C6E7B9 /* DemoOfferAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF8F49E2D3FA7D900C6E7B9 /* DemoOfferAdModel.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		482AD0462F5839F4003304C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		48AA0EB82F1E1EC70005AD9A /* ATSafeThreadArray_OP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSafeThreadArray_OP.h; sourceTree = "<group>"; };
-		48AA0EB92F1E1EC70005AD9A /* ATSafeThreadArray_OP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSafeThreadArray_OP.m; sourceTree = "<group>"; };
 		53C344E9E97195C3DC2AB982 /* Pods_iOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89255F7B2D2ADF2300995FDE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		89255F7C2D2ADF2700995FDE /* SDKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKMacros.h; sourceTree = "<group>"; };
@@ -363,8 +373,6 @@
 		CA4FCF482D3BAC7300B602A3 /* Tools&Manager */ = {
 			isa = PBXGroup;
 			children = (
-				48AA0EB82F1E1EC70005AD9A /* ATSafeThreadArray_OP.h */,
-				48AA0EB92F1E1EC70005AD9A /* ATSafeThreadArray_OP.m */,
 				CACC65D12D93C95B00958DAE /* AdSDKManager.h */,
 				CACC65D22D93C95B00958DAE /* AdSDKManager.m */,
 				CA47064D2D5C8B2A003E7AD6 /* TestMode */,
@@ -545,6 +553,7 @@
 				8972AB6C2D2AD7A300CB5A22 /* Resources */,
 				F0EBE5F401492B8921EFD296 /* [CP] Embed Pods Frameworks */,
 				18B3AF525167BCEB9A3A03CE /* [CP] Copy Pods Resources */,
+				482AD0462F5839F4003304C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -613,13 +622,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -656,13 +661,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSDemo/Pods-iOSDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -678,7 +679,6 @@
 			files = (
 				899E18AD2D2D798B005394C9 /* WildClickButton.m in Sources */,
 				8972AB9D2D2AD7A800CB5A22 /* AppDelegate.m in Sources */,
-				48AA0EBA2F1E1EC70005AD9A /* ATSafeThreadArray_OP.m in Sources */,
 				89255FC02D2AE66B00995FDE /* BaseVC.m in Sources */,
 				CA2715B12D8C02540079E0A0 /* BaseNavigationController.m in Sources */,
 				CADE555E2D32625B00E492CC /* Tools.m in Sources */,

@@ -19,7 +19,7 @@
     
     //因广告位策略会有30min沙盒缓存，测试时可以尝试删除重装，在加载广告（load）之前通过本方法设置自定义流量分组规则。
     //例：
-    //Taku后台配置的流量分组自定义规则为：isTest=1
+    //后台配置的流量分组自定义规则为：isTest=1
     //那么使用本方法:[AdLoadConfigTool joinSegmentRuleWithKey:@"isTest" value:@"1" placementID:placementID]
     [[ATSDKGlobalSetting sharedManager] setCustomData:@{key:value} forPlacementID:placementID];
 }
@@ -115,7 +115,7 @@
 }
  
 /// 海外Pangle隐私配置
-/// Pangle SDK 在v7.1+ 移除了 COPPA及CCPA设置，统一使用 PAConsent 。Taku SDK 在 v6.4.56 及以上版本中增加了对应的API来方便您根据情况自行设置。
+/// Pangle SDK 在v7.1+ 移除了 COPPA及CCPA设置，统一使用 PAConsent  SDK 在 v6.4.56 及以上版本中增加了对应的API来方便您根据情况自行设置。
 /// 注：未设置时 Pangle SDK 默认状态为 Consent。
 + (void)pangleCOPPACCPASetting {
     

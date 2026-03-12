@@ -254,7 +254,7 @@ typedef NS_ENUM(NSInteger, PPVCDisplayMode) {
 
 - (void)loadPrivacyPolicy {
     // 隐私政策URL - 开发人员请在此处填入您的隐私政策页面URL
-    NSString *privacyPolicyURL = @"https://www.takuad.com/zh-cn/privacy-policy";
+    NSString *privacyPolicyURL = @"";
     
     // 加载隐私政策网页
     NSURL *url = [NSURL URLWithString:privacyPolicyURL];

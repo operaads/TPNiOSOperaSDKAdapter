@@ -14,21 +14,21 @@ end
 
 target 'iOSDemo' do
   use_frameworks!
-  
+
     pod 'TPNiOS','6.5.34'
     #TPN Adx SDK(necessary)
     pod 'TPNMediationAdxSmartdigimktAdapter','6.5.42.1'
     pod 'TPNDebugUISDK'
-    
+
     pod 'AppLovinSDK'
-    pod 'TPNiOSOperaSDKAdapter', '~>2.8.1.0'
-    pod 'OpAdxSdk', '~>2.8.1'
-    
- 
+    pod 'OpAdxSdk', '2.8.3'
+    pod 'TPNiOSOperaSDKAdapter', '2.8.3.0'
+
+
     # Demo UI依赖的第三库
     pod 'Masonry'
     pod 'SDWebImage'
     pod 'MJRefresh'
     pod 'SVProgressHUD'
-   
+
 end

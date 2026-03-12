@@ -12,10 +12,10 @@
 typedef void (^AdManagerInitFinishBlock)(void);
 
 //在后台的应用ID
-#define kTakuAppID  @"h695b95dd8a506"
+#define kAppID  @"h695b95dd8a506"
 
 //在后台的应用维度AppKey，或者是账号维度AppKey
-#define kTakuAppKey @"a039872887c36b4acc4c19c4524739ae6"
+#define kAppKey @"a039872887c36b4acc4c19c4524739ae6"
 
 //冷启动开屏超时时间
 #define FirstAppOpen_Timeout 8

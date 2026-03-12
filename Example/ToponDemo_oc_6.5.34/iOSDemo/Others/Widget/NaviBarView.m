@@ -9,6 +9,7 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
 #import <AnyThinkSDK/ATAPI.h>
+#import <OpAdxAdapterTopon/AdapterVersion.h>
 
 @interface NaviBarView()
  
@@ -44,7 +45,7 @@
         }];
         
         self.titleLbl = [UILabel new];
-        self.titleLbl.text = @"Taku SDK Demo";//kLocalizeStr(@"Taku SDK Demo");
+        self.titleLbl.text = @"ToponAdapter Demo";//kLocalizeStr(@" SDK Demo");
         self.titleLbl.textColor = kHexColor(0x1F2126);
         self.titleLbl.font = [UIFont boldSystemFontOfSize:18];
         self.titleLbl.textAlignment = NSTextAlignmentCenter;
@@ -70,6 +71,24 @@
         [self.versionLbl mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(self.titleLbl.mas_centerY);
             make.left.mas_equalTo(self.titleLbl.mas_right).mas_offset(10);
+            make.height.mas_equalTo(self.titleLbl);
+            make.width.mas_equalTo(kAdaptW(131, 131));
+        }];
+        
+        
+        self.adapterVersionLbl = [UILabel new];
+        self.adapterVersionLbl.text = [NSString stringWithFormat:@"%@",adapterVersion];
+        self.adapterVersionLbl.textColor = kHexColor(0x8B94A3);
+        self.adapterVersionLbl.font = [UIFont systemFontOfSize:12];
+        self.adapterVersionLbl.textAlignment = NSTextAlignmentCenter;
+        self.adapterVersionLbl.layer.borderColor = kHexColor(0x8B94A3).CGColor;
+        self.adapterVersionLbl.layer.borderWidth = .5;
+        self.adapterVersionLbl.layer.cornerRadius = 5;
+        [self addSubview:self.adapterVersionLbl];
+        
+        [self.adapterVersionLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.titleLbl.mas_centerY);
+            make.left.mas_equalTo(self.versionLbl.mas_right).mas_offset(10);
             make.height.mas_equalTo(self.titleLbl);
             make.width.mas_equalTo(kAdaptW(131, 131));
         }];

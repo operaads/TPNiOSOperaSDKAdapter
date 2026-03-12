@@ -47,8 +47,8 @@
 //        "currencyCode" = "USD", // admob 展示收益货币单位
 //        "precision" = 0, // admob 展示收益精度,0:未知 1:估算,2:发布商提供 3:精准
 //        "value" = 0.1, // admob 展示收益具体值
-//        "en_p" = "5GWtXa-X-sazi-xluLlqMyBCGWIIAZQ_8p7bM2-LqeQ", //百度价格加密字段,需TakuSDK>6.3.63,百度SDK≥=5.37
-//    };//Taku Adx & OnlineAPI Offer & admob 的额外信息
+//        "en_p" = "5GWtXa-X-sazi-xluLlqMyBCGWIIAZQ_8p7bM2-LqeQ", //百度价格加密字段,需SDK>6.3.63,百度SDK≥=5.37
+//    };// Adx & OnlineAPI Offer & admob 的额外信息
 //    "placement_type" = 1; // 广告位类型  1为真实广告位，2为共享广告位
 //    "shared_placement_id" = p1en19jjiirsf3;// 共享广告位id
 //    "user_load_extra_data" =     {// 在Load前传入自定义参数信息
@@ -108,18 +108,7 @@
 /// 上报展示收益数据到Adj
 /// - Parameter extra: 代理回调中的extra参数
 + (void)handleAdjustRevenueReport:(NSDictionary *)extra {
-    
-//    // 对精度要求较高的开发者需自行进行转换
-//    double price = [extra[@"publisher_revenue"] doubleValue];
-//    NSString *currency = extra[@"currency"];
 //    
-//    // Source：收入来源(ADJAdRevenueSourceTaku在Adjust v4.37.1版本以上才有)
-//    ADJAdRevenue *adRevenue = [[ADJAdRevenue alloc] initWithSource:@"Taku"];
-//    // pass revenue and currency values
-//    [adRevenue setRevenue:price currency:currency];
-//    
-//    // track ad revenue
-//    [Adjust trackAdRevenue:adRevenue];
 }
 
 /// 上报展示收益数据到Fir
