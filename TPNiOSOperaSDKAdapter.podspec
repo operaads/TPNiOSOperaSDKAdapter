@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "TPNiOSOperaSDKAdapter"
-  spec.version      = "2.8.3.0"
+  spec.version      = "2.9.1.0"
   spec.summary      = "Opera Ads Custom Adapter for TopOn/AnyThink Mediation Platform."
   spec.description  = <<-DESC
     TPNiOSOperaSDKAdapter is a custom mediation adapter that enables the integration of
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "OpAdxAdapterTopon/CustomAdapter_6.5.xx/**/*.h"
 
   spec.dependency 'TPNiOS', '>= 6.5.34'
-  spec.dependency 'OpAdxSdk', '2.8.3'
+  spec.dependency 'OpAdxSdk', '2.9.1'
 
   # spec.pod_target_xcconfig = {
   #   'OTHER_LDFLAGS' => '-ObjC',
