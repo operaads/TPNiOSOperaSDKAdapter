@@ -7,5 +7,5 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const adapterVersion = @"2.11.1.0";
+static NSString * const adapterVersion = @"2.11.2.0";
 
