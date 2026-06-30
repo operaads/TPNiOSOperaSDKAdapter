@@ -7,7 +7,9 @@
 
 #import "TestModeTool.h"
 #import <AnyThinkSDK/ATDebuggerConfigDefine.h>
+#if __has_include(<AnyThinkDebuggerUISDK/ATDebuggerAPI.h>)
 #import <AnyThinkDebuggerUISDK/ATDebuggerAPI.h>
+#endif
 
 @implementation TestModeTool
 
@@ -15,14 +17,9 @@
 /// 需要 pod 'AnyThinkDebugUISDK','1.0.3' 测试完毕请移除⚠️
 /// - Parameter vc: 目标vc
 + (void)showDebugUI:(UIViewController *)vc {
-    //引入头文件 #import <AnyThinkDebuggerUISDK/ATDebuggerAPI.h>
-    //请注意，showType支持ATShowDebugUIPresent和ATShowDebugUIPush，如果遇到push不出来的情况，请保证您的导航控制器没有多余的继承.
-    //唤起条件：
-    //window - rootNavigation - viewController -> push debugUI
-    //1.iOS SDK已经成功初始化
-    //2.还未加载(load)任一广告
-    //3.关闭调试模式，即移除 -[ATSDKGlobalSetting setDebuggerConfig:] 相关代码
+#if __has_include(<AnyThinkDebuggerUISDK/ATDebuggerAPI.h>)
     [[ATDebuggerAPI sharedInstance] showDebuggerInViewController:vc showType:ATShowDebugUIPresent debugkey:@"填入您的DebugKey，DebugKey在后台->账号管理->Key中获取，DebugKey需要与AppID，AppKey对应"];
+#endif
 }
 
 /// 开启测试模式(每次只能指定一个广告平台，不一定100%填充广告)

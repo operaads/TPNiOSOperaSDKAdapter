@@ -24,8 +24,8 @@ TPNiOSOperaSDKAdapter is a custom mediation adapter that enables seamless integr
 
 - iOS 13.0+
 - TopOn SDK 6.5.34+
-- OpAdxSdk 2.11.1
-- Xcode 13.0+
+- OpAdxSdk 2.11.2
+- Xcode 16.0+
 
 ## Installation
 
@@ -38,10 +38,10 @@ Add the following to your `Podfile`:
 pod 'TPNiOS', '~> 6.5.34'
 
 # Opera Ads SDK
-pod 'OpAdxSdk', '2.11.1'
+pod 'OpAdxSdk', '2.11.2'
 
 # Opera Ads TopOn Adapter
-pod 'TPNiOSOperaSDKAdapter', '2.11.1.0'
+pod 'TPNiOSOperaSDKAdapter', '2.11.2.0'
 ```
 
 Then run:
@@ -232,6 +232,9 @@ Use TopOn's standard APIs to load and show ads:
 ```
 
 ## Version History
+
+### 2.11.2.0 (2026-06-30)
+- Upgraded OpAdxSdk dependency to 2.11.2
 
 ### 2.11.1.0 (2026-05-22)
 - Upgraded OpAdxSdk dependency to 2.11.1

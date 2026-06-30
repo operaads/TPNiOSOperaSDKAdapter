@@ -24,8 +24,8 @@ TPNiOSOperaSDKAdapter 是一个自定义聚合适配器，使 Opera Advertising 
 
 - iOS 13.0+
 - TopOn SDK 6.5.34+
-- OpAdxSdk 2.11.1
-- Xcode 13.0+
+- OpAdxSdk 2.11.2
+- Xcode 16.0+
 
 ## 安装
 
@@ -38,10 +38,10 @@ TPNiOSOperaSDKAdapter 是一个自定义聚合适配器，使 Opera Advertising 
 pod 'TPNiOS', '~> 6.5.34'
 
 # Opera Ads SDK
-pod 'OpAdxSdk', '2.11.1'
+pod 'OpAdxSdk', '2.11.2'
 
 # Opera Ads TopOn 适配器
-pod 'TPNiOSOperaSDKAdapter', '2.11.1.0'
+pod 'TPNiOSOperaSDKAdapter', '2.11.2.0'
 ```
 
 然后运行：
@@ -232,6 +232,9 @@ pod install
 ```
 
 ## 版本历史
+
+### 2.11.2.0 (2026-06-30)
+- 升级依赖 OpAdxSdk 至 2.11.2
 
 ### 2.11.1.0 (2026-05-22)
 - 升级依赖 OpAdxSdk 至 2.11.1
