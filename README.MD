@@ -41,7 +41,7 @@ pod 'TPNiOS', '~> 6.5.34'
 pod 'OpAdxSdk', '2.11.2'
 
 # Opera Ads TopOn 适配器
-pod 'TPNiOSOperaSDKAdapter', '2.11.2.0'
+pod 'TPNiOSOperaSDKAdapter', '2.11.2.1'
 ```
 
 然后运行：
@@ -232,6 +232,9 @@ pod install
 ```
 
 ## 版本历史
+
+### 2.11.2.1 (2026-07-09)
+- 修复错误，升级到 2.11.2.1
 
 ### 2.11.2.0 (2026-06-30)
 - 升级依赖 OpAdxSdk 至 2.11.2

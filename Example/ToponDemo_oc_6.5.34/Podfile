@@ -1,4 +1,4 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 platform :ios, '13.0'
 
@@ -15,14 +15,14 @@ end
 target 'iOSDemo' do
   use_frameworks!
 
-    pod 'TPNiOS','6.5.34'
+    pod 'TPNiOS','6.5.45'
     #TPN Adx SDK(necessary)
-    pod 'TPNMediationAdxSmartdigimktAdapter','6.5.42.1'
+    pod 'TPNMediationAdxSmartdigimktAdapter'#,'6.5.42.1'
     pod 'TPNDebugUISDK'
 
     pod 'AppLovinSDK'
-    pod 'OpAdxSdk', '2.8.3'
-    pod 'TPNiOSOperaSDKAdapter', '2.8.3.0'
+    pod 'OpAdxSdk', '2.11.2'
+    pod 'TPNiOSOperaSDKAdapter', '2.11.2.1'
 
 
     # Demo UI依赖的第三库
