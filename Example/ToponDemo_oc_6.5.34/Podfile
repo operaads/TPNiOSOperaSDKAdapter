@@ -21,8 +21,8 @@ target 'iOSDemo' do
     pod 'TPNDebugUISDK'
 
     pod 'AppLovinSDK'
-    pod 'OpAdxSdk', '2.11.2'
-    pod 'TPNiOSOperaSDKAdapter', '2.11.2.1'
+    pod 'OpAdxSdk', '2.12.0'
+    pod 'TPNiOSOperaSDKAdapter', '2.12.0.0'
 
 
     # Demo UI依赖的第三库
